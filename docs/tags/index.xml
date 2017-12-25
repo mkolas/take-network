@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Take Network</title>
-    <link>http://take.network/tags/</link>
+    <link>https://mkolas.github.io/take-network/tags/</link>
     <description>Recent content in Tags on Take Network</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/mkolas&#34;&gt;Max Kolasinski&lt;/a&gt; 2018</copyright>
     <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://take.network/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mkolas.github.io/take-network/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>http://take.network/tags/development/</link>
+      <link>https://mkolas.github.io/take-network/tags/development/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://take.network/tags/development/</guid>
+      <guid>https://mkolas.github.io/take-network/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>http://take.network/tags/go/</link>
+      <link>https://mkolas.github.io/take-network/tags/go/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://take.network/tags/go/</guid>
+      <guid>https://mkolas.github.io/take-network/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>http://take.network/tags/golang/</link>
+      <link>https://mkolas.github.io/take-network/tags/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://take.network/tags/golang/</guid>
+      <guid>https://mkolas.github.io/take-network/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>http://take.network/tags/hugo/</link>
+      <link>https://mkolas.github.io/take-network/tags/hugo/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://take.network/tags/hugo/</guid>
+      <guid>https://mkolas.github.io/take-network/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Templates</title>
-      <link>http://take.network/tags/templates/</link>
+      <link>https://mkolas.github.io/take-network/tags/templates/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://take.network/tags/templates/</guid>
+      <guid>https://mkolas.github.io/take-network/tags/templates/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Themes</title>
-      <link>http://take.network/tags/themes/</link>
+      <link>https://mkolas.github.io/take-network/tags/themes/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://take.network/tags/themes/</guid>
+      <guid>https://mkolas.github.io/take-network/tags/themes/</guid>
       <description></description>
     </item>
     

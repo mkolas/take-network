@@ -1,4 +1,4 @@
-baseurl = "http://take.network"
+baseurl = "https://mkolas.github.io/take-network/"
 languageCode = "en"
 title = "Take Network"
 theme = "kiss"
