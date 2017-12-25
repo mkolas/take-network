@@ -1,0 +1,32 @@
+baseurl = "http://take.network"
+languageCode = "en"
+title = "Take Network"
+theme = "kiss"
+copyright = "&copy; <a href=\"https://github.com/mkolas\">Max Kolasinski</a> 2018"
+# Number of posts per page
+Paginate = 5
+enableRobotsTXT = true 
+publishDir = "docs"
+
+[params.assets]
+customCSS = ["css/custom.css"]
+
+[params.info]
+enableSocial = false # Adds OpenGraph and Twitter cards
+homeTitle = "Take Network" # Title for home page
+poweredby = false # Adds powered by Hugo and Kiss below Copyright section
+
+[params.opengraph.twitter]
+page = "" # Twitter Page username. If not set, params.social.twitter will be used.
+
+[params.social]
+
+twitter = "rsmuckles"
+github = "mkolas"
+
+[taxonomies]
+tag ="tags"
+
+[blackfriday]
+hrefTargetBlank = true
+
