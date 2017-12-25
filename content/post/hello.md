@@ -21,7 +21,7 @@ Take Network is now a real, live network where you will presumably be able to in
 
 Take Network is a blog built on the [Hugo](http://gohugo.io) platform. I am not yet an expert on static site generators, but after playing around with WordPress it was very quickly apparent that a full database-backed service was probably overkill for a simple blog. Hugo seems to be the most popular project in this segment, with its main competitor being Jekyll.
 
-I originally wanted to host this site locally, but since I already have a number of other services running on my Digital Ocean droplet it was going to be too messy to try to route everything nicely with Apache. After a bit of research on my available options, I found a great [guide](https://gohugo.io/hosting-and-deployment/hosting-on-github/) on the Hugo website on how to host via GitHub Pages and folks... it works extremely well. Namecheap updated my `blog.` sudomain configuration almost instantly and all of the pathing resolved itself "automatically". Might want to file this integration under [Black Magic Fuckery](https://www.reddit.com/r/blackmagicfuckery/).
+I originally wanted to host this site locally, but since I already have a number of other services running on my Digital Ocean droplet it was going to be too messy to try to route everything nicely with Apache. After a bit of research on my available options, I found a great [guide](https://gohugo.io/hosting-and-deployment/hosting-on-github/) on the Hugo website on how to host via GitHub Pages and folks-- it works extremely well. Namecheap updated my `blog.` sudomain configuration almost instantly and all of the pathing resolved itself "automatically". Might want to file this integration under [Black Magic Fuckery](https://www.reddit.com/r/blackmagicfuckery/).
 
 ## Hugo Tricks
 
@@ -39,7 +39,7 @@ Generally, (what I think should be) my approach for Markdown is to get a split-v
 
 Apparently not everyone agrees. I found the [Typora](https://typora.io) editor and thought that it looked pretty sleek and distraction-free, but couldn't find any split functionality. [It turns out](https://github.com/typora/typora-issues/issues/70) that they're pretty vehemently against that idea, instead shooting for a WYSIWYG philosophy. But that only works when you've got font and size options like in a real document editor, right? Taking that approach in an editor where you're writing "code" is like writing HTML and automatically having it parse and render as you type. But that's just my opinion anyway.
 
-Instead I've settled for the moment on Visual Studio Code. It seems to do the trick so far, but obviously it's a much more complicated tool. I do like that it came with the Solarized color schemes out of the box, and I might find the Git integration helpful. Interestingly,  it seems to fuck with my NVidia Experience overlays... the [official greybeard response](https://github.com/Microsoft/vscode/issues/37104) seems to be dismissive of such Gamer Issues.
+Instead I've settled for the moment on Visual Studio Code. It seems to do the trick so far, but obviously it's a much more complicated tool. I do like that it came with the Solarized color schemes out of the box, and I might find the Git integration helpful. Interestingly,  it seems to fuck with my NVidia Experience overlays-- the [official greybeard response](https://github.com/Microsoft/vscode/issues/37104) seems to be dismissive of such Gamer Issues.
 
 One last note on writing in Markdown- Hugo uses a meta block called [Front Matter](https://gohugo.io/content-management/front-matter/) like the below to store page metadata:
 
@@ -52,4 +52,4 @@ One last note on writing in Markdown- Hugo uses a meta block called [Front Matte
     menu = "main" 
     +++
 
-Markdown seems to be not understand this sort of construct- it's not totally freaking out or anything like that, but interpreting it as inline prose makes it kind of awkward to edit at a glance. Presumably there's some sort of plugin for VSCode to pretty-print Hugo's Front Matter, but I'm sure I'll figure that out in the weeks to come.
+Markdown seems to not understand this sort of construct- it's not totally freaking out or anything like that, but interpreting it as inline prose makes it kind of awkward to edit at a glance. Presumably there's some sort of plugin for VSCode to pretty-print Hugo's Front Matter, but I'm sure I'll figure that out in the weeks to come.
