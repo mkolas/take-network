@@ -16,7 +16,7 @@ menu = "main"
 +++
 
 Take Network is now a real, live network where you will presumably be able to ingest takes. I can think of no better way to christen such a momentous occasion than with a recap of how I got this all online.
-
+<!--more-->
 ## Structure
 
 Take Network is a blog built on the [Hugo](http://gohugo.io) platform. I am not yet an expert on static site generators, but after playing around with WordPress it was very quick apparent that a full database-backed service was probably overkill for a simple blog. Hugo seems to be the most popular project in this segment, with its main competitor being Jekyll.
@@ -25,8 +25,9 @@ I originally wanted to host this site locally, but since I already have a number
 
 ## Hugo Tricks
 
-Things that should unfortunately _not_ filed under Black Magic Fuckery are Hugo's documentation pages. The configuration required is minimal, but it tends to be very unclear what (if anything?) needs to be copied over from theme folders to your top-level directory. Tying the pathing for CSS to your `config.toml`
-'s `baseurl` is incredibly confusing, especially since a person getting started will likely not be working right out of their final hosting destination. In my case, CSS worked fine when hosting `hugo server`, but not when opening `index.html` directly (which presumably will _never_ resolve CSS correctly). Who's going to push this stuff to a server in order to verify that their `baseurl` was configured correctly when the pages look totally broken locally?
+Things that should unfortunately _not_ be filed under Black Magic Fuckery are Hugo's documentation pages. The configuration required is minimal, but it tends to be very unclear what the workflow for building static content is supposed to be. One thing in particular that I've already found endlessly frustrating is that if you're storing your site on GitHub, the actual contents of your cloned theme repo will not commit, and thus will not be pulled in on a clone. This gives you an empty directory with your theme name, which is enough to work with such that Hugo will _not_ complain about missing the theme but also completely fail to build your site. Wonderful!
+
+Another issue I've had is that tying the pathing for CSS to your `config.toml`'s `baseurl` is incredibly confusing, especially since a person getting started will likely not be working right out of their final hosting destination. In my case, CSS worked fine when hosting `hugo server`, but not when opening `index.html` directly (which presumably will _never_ resolve CSS correctly). Who's going to push this stuff to a server in order to verify that their `baseurl` was configured correctly when the pages look totally broken locally?
 
 I still presumably need to figure out a good mechanism for updating the site content- right now, I'm hoping that as long as I remember to re-generate the static content into `docs/`, GitHub Pages hosting should be relatively painless. If you've got any tips or tricks, feel free to get at me with the contact buttons on the top right.
 

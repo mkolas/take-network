@@ -1,1 +1,3 @@
 User-agent: *
+
+Sitemap: https://mkolas.github.io/take-network//sitemap.xml

@@ -18,8 +18,8 @@
       <pubDate>Mon, 25 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://mkolas.github.io/take-network/post/hello/</guid>
-      <description>Take Network is now a real, live network where you will presumably be able to ingest takes. I can think of no better way to christen such a momentous occasion than with a recap of how I got this all online.
-Structure Take Network is a blog built on the Hugo platform. I am not yet an expert on static site generators, but after playing around with WordPress it was very quick apparent that a full database-backed service was probably overkill for a simple blog.</description>
+      <description>&lt;p&gt;Take Network is now a real, live network where you will presumably be able to ingest takes. I can think of no better way to christen such a momentous occasion than with a recap of how I got this all online.
+&lt;/p&gt;</description>
     </item>
     
   </channel>
