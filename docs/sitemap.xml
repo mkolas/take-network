@@ -3,8 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mkolas.github.io/take-network/post/advent2017/</loc>
+    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mkolas.github.io/take-network/post/games2017/</loc>
+    <lastmod>2017-12-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mkolas.github.io/take-network/post/hello/</loc>
     <lastmod>2017-12-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mkolas.github.io/take-network/post/docker2018/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mkolas.github.io/take-network/tags/2017/</loc>
+    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mkolas.github.io/take-network/tags/games/</loc>
+    <lastmod>2017-12-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mkolas.github.io/take-network/tags/golang/</loc>
+    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -21,25 +53,31 @@
   
   <url>
     <loc>https://mkolas.github.io/take-network/post/</loc>
-    <lastmod>2017-12-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mkolas.github.io/take-network/tags/programming/</loc>
-    <lastmod>2017-12-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mkolas.github.io/take-network/tags/python/</loc>
+    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mkolas.github.io/take-network/tags/</loc>
-    <lastmod>2017-12-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mkolas.github.io/take-network/</loc>
-    <lastmod>2017-12-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

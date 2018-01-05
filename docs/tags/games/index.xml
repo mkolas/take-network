@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Games on Take Network</title>
+    <link>https://mkolas.github.io/take-network/tags/games/</link>
+    <description>Recent content in Games on Take Network</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/mkolas&#34;&gt;Max Kolasinski&lt;/a&gt; 2018</copyright>
+    <lastBuildDate>Mon, 25 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mkolas.github.io/take-network/tags/games/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Games in 2017</title>
+      <link>https://mkolas.github.io/take-network/post/games2017/</link>
+      <pubDate>Mon, 25 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mkolas.github.io/take-network/post/games2017/</guid>
+      <description>I played a lot of games in 2017. A lot of them were very, very good- developers put out a surprising number of memorable single player experiences, which are, according to EA, going the way of the dodo in the near future. We also saw a number of new and interesting concepts explored in the multiplayer arena, with For Honor creating an innovative new approach to fighting games, and PUBG taking the world by storm.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programming on Take Network</title>
-    <link>https://mkolas.github.io/take-network/tags/programming/</link>
-    <description>Recent content in Programming on Take Network</description>
+    <title>Golang on Take Network</title>
+    <link>https://mkolas.github.io/take-network/tags/golang/</link>
+    <description>Recent content in Golang on Take Network</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/mkolas&#34;&gt;Max Kolasinski&lt;/a&gt; 2018</copyright>
     <lastBuildDate>Fri, 05 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mkolas.github.io/take-network/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mkolas.github.io/take-network/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       
       <guid>https://mkolas.github.io/take-network/post/advent2017/</guid>
       <description>&lt;p&gt;Over the month of December I participated in an advent calendar game called the &lt;a href=&#34;http://adventofcode.com/&#34; target=&#34;_blank&#34;&gt;Advent of Code&lt;/a&gt;. Each December from the 1st to the 25th, a new programming puzzle is dished out at 12:00AM EST for you to solve. There&amp;rsquo;s a bit of a metagame involved where competitive programmers try to race to get to solutions as fast as possible, but it&amp;rsquo;s still totally fun and a worthwhile set of programming exercises even if you don&amp;rsquo;t have the stamina to &lt;em&gt;start&lt;/em&gt; programming at midnight. I&amp;rsquo;ve catalogued a few things I learned over the month in the post below.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://mkolas.github.io/take-network/post/hello/</link>
-      <pubDate>Mon, 25 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mkolas.github.io/take-network/post/hello/</guid>
-      <description>&lt;p&gt;Take Network is now a real, live network where you will presumably be able to ingest takes. I can think of no better way to christen such a momentous occasion than with a recap of how I got this all online.
 &lt;/p&gt;</description>
     </item>
     

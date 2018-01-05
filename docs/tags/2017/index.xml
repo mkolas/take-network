@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Take Network</title>
-    <link>https://mkolas.github.io/take-network/</link>
-    <description>Recent content on Take Network</description>
+    <title>2017 on Take Network</title>
+    <link>https://mkolas.github.io/take-network/tags/2017/</link>
+    <description>Recent content in 2017 on Take Network</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/mkolas&#34;&gt;Max Kolasinski&lt;/a&gt; 2018</copyright>
     <lastBuildDate>Fri, 05 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mkolas.github.io/take-network/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mkolas.github.io/take-network/tags/2017/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -29,27 +29,6 @@
       
       <guid>https://mkolas.github.io/take-network/post/games2017/</guid>
       <description>I played a lot of games in 2017. A lot of them were very, very good- developers put out a surprising number of memorable single player experiences, which are, according to EA, going the way of the dodo in the near future. We also saw a number of new and interesting concepts explored in the multiplayer arena, with For Honor creating an innovative new approach to fighting games, and PUBG taking the world by storm.</description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://mkolas.github.io/take-network/post/hello/</link>
-      <pubDate>Mon, 25 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mkolas.github.io/take-network/post/hello/</guid>
-      <description>&lt;p&gt;Take Network is now a real, live network where you will presumably be able to ingest takes. I can think of no better way to christen such a momentous occasion than with a recap of how I got this all online.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mkolas.github.io/take-network/post/docker2018/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mkolas.github.io/take-network/post/docker2018/</guid>
-      <description>docker pull jenkins/jenkins:lts
-docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
-available on localhost:8080</description>
     </item>
     
   </channel>
