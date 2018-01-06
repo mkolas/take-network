@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Things I Learned During Advent of Code 2017 | Take Network</title>
+
+
+<link rel="stylesheet" href="https://mkolas.github.io/take-network//css/style.css"/><link rel='stylesheet' href='/take-network/css/custom.css'></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://mkolas.github.io/take-network/"><h1 class="title is-4">Take Network</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile"><a class="level-item" href='mailto:kolasinskim@gmail.com' target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+    <polyline points="22,6 12,13 2,6"/>
+    
+  </svg></i>
+            </span>
+          </a><a class="level-item" href='https://github.com/mkolas' target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+    
+  </svg></i>
+            </span>
+          </a><a class="level-item" href='https://twitter.com/rsmuckles' target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+    
+  </svg></i>
+            </span>
+          </a></nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/take-network/tags/programming">#programming</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/take-network/tags/python">#python</a>
+  
+  | <a class="subtitle is-6" href="/take-network/tags/golang">#golang</a>
+  
+  | <a class="subtitle is-6" href="/take-network/tags/2017">#2017</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">January 6, 2018</h2>
+    <h1 class="title">Things I Learned During Advent of Code 2017</h1>
+      
+    <div class="content">
+      <p>Over the month of December I participated in an advent calendar game called the <a href="http://adventofcode.com/" target="_blank">Advent of Code</a>. Each December from the 1st to the 25th, a new programming puzzle is dished out at 12:00AM EST for you to solve. There&rsquo;s a bit of a metagame involved where competitive programmers try to race to get to solutions as fast as possible, but it&rsquo;s still totally fun and a worthwhile set of programming exercises even if you don&rsquo;t have the stamina to <em>start</em> programming at midnight. I&rsquo;ve catalogued a few things I learned over the month in the post below.
+</p>
+
+<h3 id="input-parsing-is-very-easy-in-python">Input Parsing Is Very Easy In Python</h3>
+
+<p>AoC is structed such that although every participant&rsquo;s puzzles are the same, his or her inputs will vary. Depending on the puzzle, these inputs can be something as simple as an integer or string of characters. In more complicated puzzles though, they are often used to used to represent things like <a href="http://adventofcode.com/2017/day/12" target="_blank">graphs in day 12</a>:</p>
+
+<pre><code>24 &lt;-&gt; 244, 624
+25 &lt;-&gt; 25
+26 &lt;-&gt; 18, 490, 545, 1123, 1958
+</code></pre>
+
+<p>Positions, velocities, and accelerations like in <a href="http://adventofcode.com/2017/day/20" target="_blank">day 20</a>:</p>
+
+<pre><code>p=&lt;5528,2008,1661&gt;, v=&lt;-99,-78,-62&gt;, a=&lt;-17,-2,-2&gt;
+p=&lt;3088,2748,-1039&gt;, v=&lt;-103,-136,94&gt;, a=&lt;-5,0,-4&gt;
+p=&lt;628,-1052,161&gt;, v=&lt;20,33,-92&gt;, a=&lt;-5,2,8&gt;
+</code></pre>
+
+<p>Or maps such as in <a href="http://adventofcode.com/2017/day/21" target="_blank">day 21</a>:</p>
+
+<pre><code>../.. =&gt; .#./###/##.
+#./.. =&gt; ..#/.#./#.#
+</code></pre>
+
+<p>Python makes reading these sorts of inputs and tossing them into a data structure trivially easy. Although you&rsquo;ll likely need a regular expression for something like the positioning information above, the ability to carelessly shove your data into a dictionary or list without having to give a lot of thought to types or structs makes blasting through the boilerplate an absolute breeze. For the day 12 example above, creating the data structure representing our map is as simple as splitting our comma-separated value string into a list and inserting it into the dict:</p>
+
+<pre><code>nodes = dict()
+with open(&quot;input1.txt&quot;) as f:
+    for row in f:
+        from_ = row.split()[0]
+        to = ''.join(row.split()[2:]).split(',')
+        nodes[from_] = to
+</code></pre>
+
+<p>For some puzzles, like <a href="http://adventofcode.com/2017/day/5" target="_blank">day 5</a>, parsing your input can be as easy as writing a simple list comprehension:</p>
+
+<pre><code>with open(&quot;input1.txt&quot;) as f:
+    maze = [int(x) for x in f]
+</code></pre>
+
+<p>None of these are ground-breaking techniques, but the ability to skip past the busy work and get to the meat of the puzzle was something that I really appreciated for the few puzzles I worked on in Go and Rust.</p>
+
+<h3 id="puzzles-to-scale">Puzzles To &ldquo;Scale&rdquo;</h3>
+
+<p>During the latter half of AoC, many of the puzzles started playing with the idea of running millions or billions of iterations. Part 2 of <a href="http://adventofcode.com/2017/day/16" target="_blank">day 16</a> requests that you iterate the first part of your code a billion times, part 2 of <a href="http://adventofcode.com/2017/day/17" target="_blank">day 17</a> requests 50 million, <a href="http://adventofcode.com/2017/day/17" target="_blank">day 22</a> wants 10 million, and <a href="http://adventofcode.com/2017/day/13" target="_blank">day 13</a>, rather secretly, will take you in the neighborhood of 4 million iterations before you find a result.</p>
+
+<p>Before I caught on to this pattern, it was convenient excuse to just assume that Python was a relatively slow language and that I needed to re-write my solution in Go. This unfortunately was almost always a waste of time. Although Python is definitely slower, recognizing sooner that the puzzles are specifically asked in a way such that you <em>need</em> to re-think your approach would have saved me a few hours in total. For an example, I was pretty proud of my solution to <a href="http://adventofcode.com/2017/day/17" target="_blank">day 17</a>. The first part wants you to manage a list over ~2000 iterations like so:</p>
+
+<pre><code>spinlock = list([0])
+for x in range(2017):
+    index = ((index + step) % len(spinlock)) + 1
+    spinlock.insert(index, x+1)
+</code></pre>
+
+<p>The second part bumps this up to 50 million iterations, but notes that it really only cares about the item in the first index. Recognizing that this fundamentally changes the puzzle means that you can toss out what you just wrote and write a second, totally-different loop:</p>
+
+<pre><code>for x in range(50000000):
+    index = (index + step) % (x+1)
+    if index == 0:
+        to_return = x+1
+    index += 1
+</code></pre>
+
+<p>We&rsquo;re not even using a data structure anymore! Next year I might just take a mandatory break when I long numbers in the second part of question; tossing our your expectations and approaching the problem from a fresh perspective is surprisingly powerful.</p>
+
+<h3 id="generators-in-python-are-pretty-slick">Generators In Python Are Pretty Slick</h3>
+
+<p><a href="http://adventofcode.com/2017/day/13" target="_blank">Day 13</a>&rsquo;s firewall problem was the first one to jump out at me as being a natural fit for creating a generator. I recognized the pattern as being pretty damn close to the out-of-the-box itertools <a href="https://docs.python.org/3/library/itertools.html#itertools.cycle" target="_blank">cycle</a>, but unfortunately itertools doesn&rsquo;t have any built-in support for an oscillating pattern. I took a stab at building my own oscillating iterator by mashing together a forwards cycle and a backwards cycle which was messy but did the job:</p>
+
+<pre><code>def oscillate(iterable):
+    # cycle('ABCD') --&gt; A B C D C B A B C D ...
+    reverse = False
+    first = iterable[0]
+    last = iterable[len(iterable)-1]
+    iterator = cycle(iterable)
+    reverse_iterator = cycle(iterable[::-1])
+    while True:
+        if reverse:
+            to_return = next(reverse_iterator)
+            if to_return == first:
+                reverse = False
+                next(iterator)
+            yield to_return
+            continue
+        if not reverse:
+            to_return = next(iterator)
+            if to_return == last:
+                reverse = True
+                next(reverse_iterator)
+            yield to_return
+            continue
+</code></pre>
+
+<p>Although not a groundbreaking discovery, my efforts to get familiar with generators paid off handsomely a couple days later when <a href="http://adventofcode.com/2017/day/15" target="_blank">day 15</a> screamed as loud as possible for participants to write generators to solve it. This was probably one of the easiest days of the event since I had just wrote a generator that was far more complicated. I was even able to solve the second part of the question simply by adding a conditional.</p>
+
+<pre><code>def picky_generator(value, factor, multiple):
+    while True:
+        value = value * factor
+        value = value % 2147483647
+        if value % multiple == 0:
+            yield value
+</code></pre>
+
+<h3 id="i-do-not-like-python-for-recursive-and-structural-questions">I Do Not Like Python For Recursive And Structural Questions</h3>
+
+<p>Python is a blast to write when you&rsquo;re able to ignore scope and can use the built-in data structures, but becomes more error-prone when you want to do more &ldquo;formal&rdquo; things like specifically pass values or references. I&rsquo;ve also had a few bad experiences with <code>copy</code> vs <code>copy.deepcopy</code>, and the fact that mutable objects are accessible globally is also potentially dangerous and a bit spooky to write.</p>
+
+<p>(As an aside, <a href="https://jeffknupp.com/blog/2012/11/13/is-python-callbyvalue-or-callbyreference-neither/" target="_blank">this blog post</a> is a pretty good rundown of some of the trickiness inherent in how Python binds variable names. The comments arguing that the author is wrong for opposite reasons are wonderful.)</p>
+
+<p>I reworked a few of AoC&rsquo;s more complicated questions in Go a handful of times, but only <a href="http://adventofcode.com/2017/day/24" target="_blank">day 24</a> jumped out to me as one that I knew I wanted a staticly-typed language from the start. I created a super simple struct to represent our bridge parts:</p>
+
+<pre><code>type Component struct {
+    PinA int
+    PinB int
+}
+</code></pre>
+
+<p>and then made a clean, organized, recursive function with <code>maxStrength</code> passed by reference:</p>
+
+<pre><code>func buildBridge(componentList []Component, pin int, size int, maxStrength *int) {
+    // get list of possible components
+    var options []Component
+    for _, element := range componentList {
+        if element.PinA == pin || element.PinB == pin {
+            options = append(options, element)
+        }
+    }
+
+    if len(options) == 0 {
+        if size &gt; *maxStrength {
+            *maxStrength = size
+        }
+        return
+    }
+    // for each of those, continue building
+    for _, element := range options {
+        newSize := size + element.PinA + element.PinB
+        remainingComponents := make([]Component, len(componentList))
+        copy(remainingComponents, componentList)
+        remainingComponents = findAndRemove(remainingComponents, element)
+        var newPin int
+        if element.PinA == pin {
+            newPin = element.PinB
+        } else {
+            newPin = element.PinA
+        }
+        buildBridge(remainingComponents, newPin, newSize, maxStrength)
+    }
+}
+</code></pre>
+
+<p>In retrospect, it would likely have been very possible to use a Python <code>tuple</code> to represent my bridge pieces, but specifically being able to identify each side as <code>pinA</code> or <code>pinB</code> seems cleaner. I could also have set <code>maxStrength</code> as a <code>global</code> instead of passing a reference around. Lastly, although Python can certainly copy lists just like any other language, I&rsquo;ve learned to trust Go&rsquo;s <code>copy</code> far, far more that Python&rsquo;s implementations.</p>
+
+<h3 id="lastly-one-neat-trick-for-representing-multidimensional-arrays-puzzlers-hate-it">Lastly, One Neat Trick For Representing Multidimensional Arrays (Puzzlers Hate It!)</h3>
+
+<p>Grid-based puzzles are almost always more arduous than they need to be. Working in multiple dimensions is generally a pain in the ass, and is particularly awful in a scenario where your grid needs to be resized. Early on in AoC, I solved these sorts of problems in the standard way:</p>
+
+<pre><code>while(True):
+    spiral[x,y] = spiral[x-1,y-1]+spiral[x,y-1]+spiral[x+1,y-1]+spiral[x-1,y]+spiral[x+1,y]+spiral[x-1,y+1]+spiral[x,y+1]+spiral[x+1,y+1]
+    if direction == &quot;right&quot;:
+        if spiral[x,y-1] == 0:
+            y = y-1
+            direction = &quot;up&quot;
+        else:
+            x = x+1
+        continue
+    ...
+</code></pre>
+
+<p>In the case of <a href="http://adventofcode.com/2017/day/3" target="_blank">day 3</a> where this snippet is from, I just made a too-big grid so I wouldn&rsquo;t have to bother with re-sizing. Numpy can also fill in a matrix with <code>0</code> values, which fit the requirements here well.</p>
+
+<p>However, I had a revelation while working on <a href="http://adventofcode.com/2017/day/19" target="_blank">day 19</a>, which asks you to navigate a piece of fixed-width ASCII art. Rather than attempting to store our grid as a list of lists, why not store it in a dict keyed by <code>(x, y)</code> pairs?</p>
+
+<pre><code>tubes = dict()
+with open(&quot;input1.txt&quot;) as f:
+for y, row in enumerate(f):
+    row_list = list()
+    for x, c in enumerate(row):
+        tubes[(x, y)] = c
+        if c is &quot;|&quot; and y == 0:
+            position = (x, y)
+</code></pre>
+
+<p>This allows you to totally ignore the traditional &ldquo;bounds&rdquo; of a list-based data structure, and lets you use the <code>(x, y)</code> pairs that you learned in school instead of the <code>(y, x)</code> pairs that reading in a file would generally produce. In addition, &ldquo;moving&rdquo; in a tuple-keyed dictionary is supremely easy. If you store your directions as tuples as well, you can simply add your tuples together:</p>
+
+<pre><code>east = (1, 0)
+position = (5, 5)
+new_position = add(position, east)
+</code></pre>
+
+<p>This data structure ended up being the absolute perfect structure for <a href="http://adventofcode.com/2017/day/22" target="_blank">day 22</a>, which required turning, movement, and an infinite grid:</p>
+
+<pre><code>def create_if_not_exists(pos):
+    if pos not in grid:
+        grid[pos] = '.'
+
+for x in range(10000):
+if grid[position] is '.':
+    direction = turn_left(direction)
+    grid[position] = '#'
+    infections += 1
+elif grid[position] is &quot;#&quot;:
+    direction = turn_right(direction)
+    grid[position] = '.'
+position = add(position, direction)
+create_if_not_exists(position)
+</code></pre>
+
+<p>One thing that this paradigm will not do? Make a puzzle like <a href="http://adventofcode.com/2017/day/21" target="_blank">day 21</a> remotely tolerable. If there&rsquo;s any way to chop up and partition a matrix of values without tedious and manual array manipulation, I&rsquo;m all ears!</p>
+
+<p>Thanks so much for reading- I had a great time working on AoC 2017 and learned a whole lot doing it. All of <a href="https://github.com/mkolas/advent2017" target="_blank">my solutions are available</a> on GitHub if you&rsquo;d like to see full examples or get a sense of how I solved a puzzle. I&rsquo;d highly recommend jumping in next year if you&rsquo;re even a small bit interested- it&rsquo;s a lot of fun and a great series of exercises.</p>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/mkolas">Max Kolasinski</a> 2018</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
