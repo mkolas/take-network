@@ -13,6 +13,7 @@ categories = [
     "Meta",
 ]
 menu = "main"
+draft = false
 +++
 
 Take Network is now a real, live network where you will presumably be able to ingest takes. I can think of no better way to christen such a momentous occasion than with a recap of how I got this all online.

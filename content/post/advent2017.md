@@ -7,11 +7,12 @@ tags = [
     "golang",
     "2017"
 ]
-date = "2018-01-05"
+date = "2018-01-06"
 categories = [
     "Programming",
 ]
 menu = "main"
+draft = false
 +++
 
 Over the month of December I participated in an advent calendar game called the [Advent of Code](http://adventofcode.com/). Each December from the 1st to the 25th, a new programming puzzle is dished out at 12:00AM EST for you to solve. There's a bit of a metagame involved where competitive programmers try to race to get to solutions as fast as possible, but it's still totally fun and a worthwhile set of programming exercises even if you don't have the stamina to _start_ programming at midnight. I've catalogued a few things I learned over the month in the post below.

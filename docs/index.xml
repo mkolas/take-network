@@ -7,15 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/mkolas&#34;&gt;Max Kolasinski&lt;/a&gt; 2018</copyright>
-    <lastBuildDate>Fri, 05 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mkolas.github.io/take-network/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Docker</title>
+      <link>https://mkolas.github.io/take-network/post/docker2018/</link>
+      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mkolas.github.io/take-network/post/docker2018/</guid>
+      <description>docker pull jenkins/jenkins:lts
+docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+available on localhost:8080</description>
+    </item>
+    
+    <item>
       <title>Things I Learned During Advent of Code 2017</title>
       <link>https://mkolas.github.io/take-network/post/advent2017/</link>
-      <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://mkolas.github.io/take-network/post/advent2017/</guid>
       <description>&lt;p&gt;Over the month of December I participated in an advent calendar game called the &lt;a href=&#34;http://adventofcode.com/&#34; target=&#34;_blank&#34;&gt;Advent of Code&lt;/a&gt;. Each December from the 1st to the 25th, a new programming puzzle is dished out at 12:00AM EST for you to solve. There&amp;rsquo;s a bit of a metagame involved where competitive programmers try to race to get to solutions as fast as possible, but it&amp;rsquo;s still totally fun and a worthwhile set of programming exercises even if you don&amp;rsquo;t have the stamina to &lt;em&gt;start&lt;/em&gt; programming at midnight. I&amp;rsquo;ve catalogued a few things I learned over the month in the post below.
@@ -39,17 +50,6 @@
       <guid>https://mkolas.github.io/take-network/post/hello/</guid>
       <description>&lt;p&gt;Take Network is now a real, live network where you will presumably be able to ingest takes. I can think of no better way to christen such a momentous occasion than with a recap of how I got this all online.
 &lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mkolas.github.io/take-network/post/docker2018/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mkolas.github.io/take-network/post/docker2018/</guid>
-      <description>docker pull jenkins/jenkins:lts
-docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
-available on localhost:8080</description>
     </item>
     
   </channel>
