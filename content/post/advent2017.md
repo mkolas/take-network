@@ -15,7 +15,7 @@ menu = "main"
 draft = false
 +++
 
-Over the month of December I participated in an advent calendar game called the [Advent of Code](http://adventofcode.com/). Each December from the 1st to the 25th, a new programming puzzle is dished out at 12:00AM EST for you to solve. There's a bit of a metagame involved where competitive programmers try to race to get to solutions as fast as possible, but it's still totally fun and a worthwhile set of programming exercises even if you don't have the stamina to _start_ programming at midnight. I've catalogued a few things I learned over the month in the post below.
+Over the month of December I participated in an advent calendar game called the [Advent of Code](http://adventofcode.com/). Each December from the 1st to the 25th, a new programming puzzle is dished out at 12:00AM EST for you to solve. There's a bit of a metagame involved where competitive programmers try to race to get to solutions as fast as possible, but it's still totally fun and a worthwhile set of programming exercises even if you don't have the stamina to _start_ programming at midnight. I've catalogued a few things I learned over the month in this post.
 <!--more-->
 
 ### Input Parsing Is Very Easy In Python
@@ -53,7 +53,6 @@ For some puzzles, like [day 5](http://adventofcode.com/2017/day/5), parsing your
 
 None of these are ground-breaking techniques, but the ability to skip past the busy work and get to the meat of the puzzle was something that I really appreciated for the few puzzles I worked on in Go and Rust.
 
-
 ### Puzzles To "Scale"
 
 During the latter half of AoC, many of the puzzles started playing with the idea of running millions or billions of iterations. Part 2 of [day 16](http://adventofcode.com/2017/day/16) requests that you iterate the first part of your code a billion times, part 2 of [day 17](http://adventofcode.com/2017/day/17) requests 50 million, [day 22](http://adventofcode.com/2017/day/17) wants 10 million, and [day 13](http://adventofcode.com/2017/day/13), rather secretly, will take you in the neighborhood of 4 million iterations before you find a result.
@@ -74,7 +73,6 @@ The second part bumps this up to 50 million iterations, but notes that it really
         index += 1
 
 We're not even using a data structure anymore! Next year I might just take a mandatory break when I long numbers in the second part of question; tossing our your expectations and approaching the problem from a fresh perspective is surprisingly powerful.
-
 
 ### Generators In Python Are Pretty Slick
 
@@ -111,7 +109,6 @@ Although not a groundbreaking discovery, my efforts to get familiar with generat
             value = value % 2147483647
             if value % multiple == 0:
                 yield value
-
 
 ### I Do Not Like Python For Recursive And Structural Questions
 

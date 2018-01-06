@@ -12,6 +12,7 @@ categories = [
     "Programming",
 ]
 menu = "main"
+draft = true
 +++
 
 docker pull jenkins/jenkins:lts

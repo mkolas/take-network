@@ -3,18 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mkolas.github.io/take-network/post/docker2018/</loc>
-    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mkolas.github.io/take-network/post/advent2017/</loc>
     <lastmod>2018-01-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mkolas.github.io/take-network/post/games2017/</loc>
-    <lastmod>2017-12-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -25,12 +15,6 @@
   <url>
     <loc>https://mkolas.github.io/take-network/tags/2017/</loc>
     <lastmod>2018-01-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mkolas.github.io/take-network/tags/games/</loc>
-    <lastmod>2017-12-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

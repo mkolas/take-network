@@ -10,6 +10,7 @@ categories = [
     "Games",
 ]
 menu = "main"
+draft = true
 +++
 
 I played a lot of games in 2017. A lot of them were very, very good- developers put out a surprising number of memorable single player experiences, which are, [according to EA](https://www.ea.com/news/an-update-on-the-visceral-star-wars-project ), going the way of the dodo in the near future. We also saw a number of new and interesting concepts explored in the multiplayer arena, with For Honor creating an innovative new approach to fighting games, and PUBG taking the world by storm. But which games were _the best_? We will attempt to find out below.
