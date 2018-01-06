@@ -57,7 +57,7 @@ None of these are ground-breaking techniques, but the ability to skip past the b
 
 During the latter half of AoC, many of the puzzles started playing with the idea of running millions or billions of iterations. Part 2 of [day 16](http://adventofcode.com/2017/day/16) requests that you iterate the first part of your code a billion times, part 2 of [day 17](http://adventofcode.com/2017/day/17) requests 50 million, [day 22](http://adventofcode.com/2017/day/17) wants 10 million, and [day 13](http://adventofcode.com/2017/day/13), rather secretly, will take you in the neighborhood of 4 million iterations before you find a result.
 
-Before I caught on to this pattern, it was convenient excuse to just assume that Python was a relatively slow language and that I needed to re-write my solution in Go. This unfortunately was almost always a waste of time. Although Python is definitely slower, recognizing sooner that the puzzles are specifically asked in a way such that you _need_ to re-think your approach would have saved me a few hours in total. For an example, I was pretty proud of my solution to [day 17](http://adventofcode.com/2017/day/17). The first part wants you to manage a list over ~2000 iterations like so:
+Before I caught on to this pattern, it was a convenient excuse to just assume that Python was a relatively slow language and that I needed to re-write my solution in Go. This unfortunately was almost always a waste of time. Although Python is definitely slower, recognizing sooner that the puzzles are specifically asked in a way such that you _need_ to re-think your approach would have saved me a few hours in total. As an example, I was pretty proud of my solution to [day 17](http://adventofcode.com/2017/day/17). The first part wants you to manage a list over ~2000 iterations like so:
 
     spinlock = list([0])
     for x in range(2017):
@@ -72,7 +72,7 @@ The second part bumps this up to 50 million iterations, but notes that it really
             to_return = x+1
         index += 1
 
-We're not even using a data structure anymore! Next year I might just take a mandatory break when I long numbers in the second part of question; tossing our your expectations and approaching the problem from a fresh perspective is surprisingly powerful.
+We're not even using a data structure anymore! Next year I might just take a mandatory break when I see big numbers in the second part of a question; tossing out your expectations and approaching the problem from a fresh perspective is surprisingly powerful.
 
 ### Generators In Python Are Pretty Slick
 
@@ -112,7 +112,7 @@ Although not a groundbreaking discovery, my efforts to get familiar with generat
 
 ### I Do Not Like Python For Recursive And Structural Questions
 
-Python is a blast to write when you're able to ignore scope and can use the built-in data structures, but becomes more error-prone when you want to do more "formal" things like specifically pass values or references. I've also had a few bad experiences with `copy` vs `copy.deepcopy`, and the fact that mutable objects are accessible globally is also potentially dangerous and a bit spooky to write.
+Python is a blast to write when you're able to ignore scope and can use the built-in data structures, but becomes more error-prone when you want to do more "formal" things like specifically pass values or references. I've also had a few bad experiences with `copy` vs. `copy.deepcopy`, and the fact that mutable objects are accessible globally is also potentially dangerous and a bit spooky to write.
 
 (As an aside, [this blog post](https://jeffknupp.com/blog/2012/11/13/is-python-callbyvalue-or-callbyreference-neither/) is a pretty good rundown of some of the trickiness inherent in how Python binds variable names. The comments arguing that the author is wrong for opposite reasons are wonderful.) 
 
@@ -160,7 +160,7 @@ In retrospect, it would likely have been very possible to use a Python `tuple` t
 
 ### Lastly, One Neat Trick For Representing Multidimensional Arrays (Puzzlers Hate It!)
 
-Grid-based puzzles are almost always more arduous than they need to be. Working in multiple dimensions is generally a pain in the ass, and is particularly awful in a scenario where your grid needs to be resized. Early on in AoC, I solved these sorts of problems in the standard way:
+Grid-based puzzles are almost always more arduous than they need to be. Working in multiple dimensions is generally a pain in the behind, and is particularly awful in scenarios where your array structures need to be resized. Early on in AoC, I solved these sorts of problems with the "standard" approach:
     
     while(True):
         spiral[x,y] = spiral[x-1,y-1]+spiral[x,y-1]+spiral[x+1,y-1]+spiral[x-1,y]+spiral[x+1,y]+spiral[x-1,y+1]+spiral[x,y+1]+spiral[x+1,y+1]
@@ -192,7 +192,7 @@ This allows you to totally ignore the traditional "bounds" of a list-based data 
     position = (5, 5)
     new_position = add(position, east)
 
-This data structure ended up being the absolute perfect structure for [day 22](http://adventofcode.com/2017/day/22), which required turning, movement, and an infinite grid:
+This data structure ended up being the absolute perfect approach for [day 22](http://adventofcode.com/2017/day/22), which required turning, movement, and an infinite grid:
 
     def create_if_not_exists(pos):
         if pos not in grid:
